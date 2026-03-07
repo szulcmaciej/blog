@@ -1,11 +1,16 @@
 title: Maciek's Blog
 description: Thoughts on software, vibe coding, and building things.
 baseurl: "/blog"
-url: "https://maciejszulc.github.io"
+url: "https://szulcmaciej.github.io"
 theme: minima
 
-author:
-  name: Maciek Szulc
+author: Maciek Szulc
+
+minima:
+  social_links:
+    - { platform: github, user_url: "https://github.com/szulcmaciej" }
+    - { platform: linkedin, user_url: "https://www.linkedin.com/in/szulcmaciej1/" }
+    - { platform: x, user_url: "https://x.com/surfy_nerd" }
 
 plugins:
   - jekyll-feed

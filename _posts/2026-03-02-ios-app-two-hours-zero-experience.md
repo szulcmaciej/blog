@@ -2,6 +2,9 @@
 layout: post
 title: "I Built an iOS App in 2 Hours With Zero iOS Experience"
 date: 2026-03-02
+categories: [vibe-coding, ios]
+tags: [claude, swift, ios, vibe-coding, side-project]
+excerpt: "I had a simple problem — my toddler does funny things on repeat and I want to share snappy time-lapses. So I opened Claude Code and built a native iOS app from scratch in two hours, with zero iOS experience. Thanks Claude."
 ---
 
 I have a 1-year-old son. If you've ever had a toddler, you know what their day looks like: they find something fun and do it 47 times in a row. Climbing on the couch, off the couch, on the couch, off the couch — for twenty minutes straight. And of course I'm recording all of it, because it's adorable and I'll want proof when he's older.
