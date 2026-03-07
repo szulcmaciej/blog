@@ -6,7 +6,7 @@ date: 2026-03-02
 
 I have a 1-year-old son. If you've ever had a toddler, you know what their day looks like: they find something fun and do it 47 times in a row. Climbing on the couch, off the couch, on the couch, off the couch — for twenty minutes straight. And of course I'm recording all of it, because it's adorable and I'll want proof when he's older.
 
-The problem is sharing these videos. Nobody — not grandma, not my friends, not my WhatsApp group — wants to watch a 3-minute video of a baby doing the same thing on repeat. But a 10-second time-lapse of it? That's gold. That's a highlight reel.
+The problem is sharing these videos. Nobody — not grandma, not my friends, not my WhatsApp group — wants to watch a 3-minute video of a baby doing the same thing on repeat. But a 10-second time-lapse of it? That's gold.
 
 So I wanted a simple tool: pick a video, speed it up, save it. No timeline editing, no filters, no subscriptions. Just fast-forward and done.
 
@@ -90,7 +90,7 @@ Here's the ironic thing: building the app was the easy part. Getting it onto my 
 
 Apple's ecosystem is famously locked down, and it shows. My options for sharing a personal app with my parents are:
 
-- **TestFlight**: Requires a $99/year developer account, uploading to App Store Connect, and then explaining to my mom what TestFlight is and why she needs to install a separate app to install my app.
+- **TestFlight**: Requires a $99/year developer account, uploading to App Store Connect, and then explaining to my wife what TestFlight is and why she needs to install a separate app to install my app.
 - **Direct install from Xcode**: Plug each family member's iPhone into my MacBook one by one. Free accounts limit you to 3 devices and the app expires after 7 days. Cool.
 - **App Store**: Full review process, screenshots, privacy policy, and — oh right — it targets beta iOS so Apple won't even accept it right now.
 
@@ -98,7 +98,7 @@ I can AirDrop a photo, a video, a PDF, a contact — but not an app. I just buil
 
 It feels like the tooling for *building* personal software has leaped forward by a decade, but the tooling for *sharing* it hasn't moved at all. We can vibe code a native app in an afternoon, but we still can't hand it to someone without jumping through hoops designed for commercial software distribution.
 
-I guess I figured out why web apps are so popular these days.
+I guess I just figured out why web apps are so popular these days. No such friction there.
 
 ## What this means
 
