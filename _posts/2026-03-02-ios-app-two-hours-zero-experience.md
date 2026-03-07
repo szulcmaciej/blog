@@ -2,7 +2,6 @@
 layout: post
 title: "I Built an iOS App in 2 Hours With Zero iOS Experience"
 date: 2026-03-02
-categories: [vibe-coding, ios]
 tags: [claude, swift, ios, vibe-coding, side-project]
 excerpt: "I had a simple problem — my toddler does funny things on repeat and I want to share snappy time-lapses. So I opened Claude Code and built a native iOS app from scratch in two hours, with zero iOS experience. Thanks Claude."
 ---
@@ -91,7 +90,7 @@ Two hours. Zero prior iOS knowledge.
 
 Here's the ironic thing: building the app was the easy part. Getting it onto my family's phones? That's where I hit a wall.
 
-Apple's ecosystem is famously locked down, and it shows. My options for sharing a personal app with my parents are:
+Apple's ecosystem is famously locked down, and it shows. My options for sharing a personal app with my family are:
 
 - **TestFlight**: Requires a $99/year developer account, uploading to App Store Connect, and then explaining to my wife what TestFlight is and why she needs to install a separate app to install my app.
 - **Direct install from Xcode**: Plug each family member's iPhone into my MacBook one by one. Free accounts limit you to 3 devices and the app expires after 7 days. Cool.
