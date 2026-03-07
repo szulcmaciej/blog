@@ -6,6 +6,10 @@ theme: minima
 
 author: Maciek Szulc
 
+github_username: szulcmaciej
+linkedin_username: szulcmaciej1
+twitter_username: surfy_nerd
+
 minima:
   social_links:
     - { platform: github, user_url: "https://github.com/szulcmaciej" }
