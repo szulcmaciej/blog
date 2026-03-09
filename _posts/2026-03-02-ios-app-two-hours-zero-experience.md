@@ -77,11 +77,15 @@ Two hours. Zero prior iOS knowledge.
 
 <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
   <div style="text-align: center;">
-    <img src="{{ '/assets/images/video_warp_app.gif' | relative_url }}" alt="Video Warp app in action — picking a video, adjusting speed, and exporting" style="max-width: 280px; border-radius: 12px;" />
+    <video autoplay loop muted playsinline style="max-width: 280px; border-radius: 12px;">
+      <source src="{{ '/assets/images/video_warp_app.mp4' | relative_url }}" type="video/mp4" />
+    </video>
     <p><em>The app: pick a video, set the speed, tap Warp</em></p>
   </div>
   <div style="text-align: center;">
-    <img src="{{ '/assets/images/share_action.gif' | relative_url }}" alt="Video Warp share extension in the iOS share sheet" style="max-width: 280px; border-radius: 12px;" />
+    <video autoplay loop muted playsinline style="max-width: 280px; border-radius: 12px;">
+      <source src="{{ '/assets/images/share_action.mp4' | relative_url }}" type="video/mp4" />
+    </video>
     <p><em>The Share Extension: speed up videos right from the share sheet</em></p>
   </div>
 </div>
