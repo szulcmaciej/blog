@@ -94,7 +94,7 @@ Two hours. Zero prior iOS knowledge.
 
 ## The fine print
 
-Here's the ironic thing: building the app was the easy part. Keeping it on my phone turned out to be harder than expected — with a free developer account, apps expire after 7 days, so I get to plug in and rebuild weekly. And sharing it with my family? Don't even get me started. [Actually, do]({% post_url 2026-03-10-sharing-ios-apps-is-broken %}).
+Here's the ironic thing: building the app was the easy part. Keeping it on my phone turned out to be harder than expected — with a free developer account, apps expire after 7 days, so I get to plug in and rebuild weekly. And sharing it with my family? Don't even get me started. [Actually, do]({{ site.baseurl }}{% post_url 2026-03-10-sharing-ios-apps-is-broken %}).
 
 ## What this means
 

@@ -6,7 +6,7 @@ tags: [ios, apple, rant, vibe-coding]
 excerpt: "I can AirDrop a photo, a video, a PDF, a contact — but not an app. The tooling for building personal software has leaped forward by a decade, but sharing it hasn't moved at all."
 ---
 
-Yesterday I was at a playground with my son. He discovered the outdoor workout area and was running in circles around the equipment — and I was filming it, because of course I was. I wanted to turn it into a quick time-lapse and send it to the family group chat. I have an app for that. I [built it myself]({% post_url 2026-03-02-ios-app-two-hours-zero-experience %}) a week ago with Claude Code.
+Yesterday I was at a playground with my son. He discovered the outdoor workout area and was running in circles around the equipment — and I was filming it, because of course I was. I wanted to turn it into a quick time-lapse and send it to the family group chat. I have an app for that. I [built it myself]({{ site.baseurl }}{% post_url 2026-03-02-ios-app-two-hours-zero-experience %}) a week ago with Claude Code.
 
 I opened my phone and the app was gone.
 
