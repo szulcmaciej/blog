@@ -98,9 +98,9 @@ Here's the ironic thing: building the app was the easy part. Keeping it on my ph
 
 ## What this means
 
-I'm not claiming I'm an iOS developer now. I couldn't maintain this codebase without Claude, and I definitely couldn't debug an AVFoundation pipeline on my own.
+I'm not claiming I'm an iOS developer now. I couldn't maintain this codebase without Claude, and without Claude I'd realistically just never build it. Not because the app is complex — it's one screen with one button — but because the mental barrier of learning Swift, figuring out how iOS video processing works, and debugging things I've never seen before would kill the idea long before I'd write any code. It's just not worth the investment for a personal tool I'll use twice a week — or, knowing myself, twice ever before forgetting it exists.
 
-But that's kind of the point. I had a simple, personal problem — my kid does funny things on repeat and I want to share snappy time-lapses with the family — and the barrier between "I want this" and "I have this on my phone" was about two hours and a conversation.
+With Claude, that barrier is gone. I don't need to learn the technology — I just need to know what I want. Everything else is either done for me or explained to me when I ask.
 
 I love software that does one thing well. No settings pages with 47 tabs. No onboarding flow. No account creation. No "have you considered upgrading to Pro?" You open it, you do the thing, you close it. That's it. That's the app.
 
