@@ -92,19 +92,7 @@ Two hours. Zero prior iOS knowledge.
 
 ## The hardest part? Sharing it.
 
-Here's the ironic thing: building the app was the easy part. Getting it onto my family's phones? That's where I hit a wall.
-
-Apple's ecosystem is famously locked down, and it shows. My options for sharing a personal app with my family are:
-
-- **TestFlight**: Requires a $99/year developer account, uploading to App Store Connect, and then explaining to my wife what TestFlight is and why she needs to install a separate app to install my app.
-- **Direct install from Xcode**: Plug each family member's iPhone into my MacBook one by one. Free accounts limit you to 3 devices and the app expires after 7 days. Cool.
-- **App Store**: Full review process, screenshots, privacy policy, and — oh right — it targets beta iOS so Apple won't even accept it right now.
-
-I can AirDrop a photo, a video, a PDF, a contact — but not an app. I just built a perfectly functional, harmless little video tool, and the simplest distribution channel is driving to my parents' house with a USB cable.
-
-It feels like the tooling for *building* personal software has leaped forward by a decade, but the tooling for *sharing* it hasn't moved at all. We can vibe code a native app in an afternoon, but we still can't hand it to someone without jumping through hoops designed for commercial software distribution.
-
-I guess I just figured out why web apps are so popular these days. No such friction there.
+Here's the ironic thing: building the app was the easy part. Getting it onto my family's phones? That was a whole different story. Apple's distribution options for personal apps range from "pay $99/year and explain TestFlight to your wife" to "drive to your parents' house with a USB cable." I have a [whole separate rant about this]({% post_url 2026-03-10-sharing-ios-apps-is-broken %}).
 
 ## What this means
 
