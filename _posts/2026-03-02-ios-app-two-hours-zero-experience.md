@@ -14,7 +14,7 @@ So I wanted a simple tool: pick a video, speed it up, save it. No timeline editi
 
 So I built one. A native iOS app. From scratch. In about two hours.
 
-I have zero experience with iOS development. I've never written Swift. I don't know AVFoundation, UIKit, or SwiftUI. I couldn't tell you the difference between a `PHPickerViewController` and a `UIViewControllerRepresentable` — and honestly, I still can't fully explain what half the code does.
+I have zero experience with iOS development. I've never written Swift. I couldn't tell you the difference between a `PHPickerViewController` and a `UIViewControllerRepresentable` — those are real things in the codebase, by the way, I did not just mash my keyboard. I still can't explain what half the code does.
 
 But the app works. On my iPhone. With a Share Extension, so I can speed up videos directly from the Photos share sheet, right next to AirDrop and Messages.
 
@@ -39,17 +39,19 @@ Then it got to work.
 
 Claude stripped out the Core Data template code I didn't need, created a video picker, built a full processing pipeline using `AVMutableComposition` (whatever that is), and wired up a dark, minimal UI with a speed slider and a "Warp" button.
 
-The first version had a bug — only the beginning of the video was actually sped up. I described what I saw, Claude diagnosed the issue (something about per-track scaling vs. composition-level scaling and explicit frame timing), and fixed it.
+The first version had a bug — only the beginning of the video was actually sped up. I described what I saw, Claude explained what went wrong using words I nodded along to, and fixed it.
 
 Then I asked for the Share Extension. Claude wrote the extension code and walked me through adding the target in Xcode — the one step that genuinely requires clicking through Xcode's UI. The rest was all code.
 
-## The bugs were the interesting part
+## The part where I was useful
+
+There's one thing a human with a phone can do that an AI can't: tap buttons and notice when things break. I'm sure there's some elaborate agentic testing setup that could do this too, but I definitely don't know how to set that up either.
 
 The app worked immediately with videos I'd received on WhatsApp. But videos I'd recorded on my iPhone? Nothing. I'd pick the video and get bounced straight back to the picker screen.
 
-I described the behavior to Claude. Turns out iPhone-recorded videos are HEVC (H.265), and the default photo picker mode tries to transcode them on the fly — and silently fails. The fix was two lines: set `preferredAssetRepresentationMode = .current` and add fallback video type identifiers.
+I described the behavior to Claude. Turns out iPhone-recorded videos use some special format, and the default picker tries to convert them on the fly — and silently fails. The fix was two lines of code. I could paste them here but neither of us would know what we're looking at, so let's move on.
 
-I never would have figured that out on my own. I didn't even know what HEVC was in this context. But Claude knew the exact failure mode and the exact fix. Thanks Claude.
+I never would have figured that out on my own. But Claude knew the exact failure mode and the exact fix. Thanks Claude.
 
 ## What I actually did
 
@@ -61,12 +63,12 @@ Let me be honest about my contribution:
 - I said "commit it"
 - I dragged a logo PNG into Xcode's asset catalog
 
-That's genuinely it. Every line of Swift was written by Claude. Every architectural decision — how to handle video composition, how to manage the export session, how to structure the extension — was Claude's.
+That's genuinely it. Every line of Swift was written by Claude. Every architectural decision was Claude's. I wouldn't even know what decisions needed to be made. According to Claude, they were: how to handle video composition, how to manage the export session, and how to structure the extension. Sure, sounds important.
 
 ## The result
 
 A working iOS app with:
-- A video picker that handles all formats including HEVC
+- A video picker that handles all formats (including the annoying one that broke everything)
 - A speed slider (2x-20x) with a clean dark UI
 - Progress tracking during export
 - Automatic save to Photos
@@ -90,9 +92,9 @@ Two hours. Zero prior iOS knowledge.
   </div>
 </div>
 
-## The hardest part? Sharing it.
+## The fine print
 
-Here's the ironic thing: building the app was the easy part. Getting it onto my family's phones? That was a whole different story. Apple's distribution options for personal apps range from "pay $99/year and explain TestFlight to your wife" to "drive to your parents' house with a USB cable." I have a [whole separate rant about this]({% post_url 2026-03-10-sharing-ios-apps-is-broken %}).
+Here's the ironic thing: building the app was the easy part. Keeping it on my phone turned out to be harder than expected — with a free developer account, apps expire after 7 days, so I get to plug in and rebuild weekly. And sharing it with my family? Don't even get me started. [Actually, do]({% post_url 2026-03-10-sharing-ios-apps-is-broken %}).
 
 ## What this means
 
